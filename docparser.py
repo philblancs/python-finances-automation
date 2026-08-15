@@ -5,7 +5,7 @@ import pytesseract
 from PIL import Image
 import os
 
-st.set_page_config(page_title="Transaction Uploader", page_icon="📂", layout="centered")
+st.set_page_config(page_title="Transaction Uploader", page_icon="📂", layout="wide")
 
 def pdf_to_csv(pdf_file, output_csv="converted.csv"):
     """Convert a PDF bank statement to CSV using pdfplumber, fallback to OCR if needed."""

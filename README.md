@@ -36,7 +36,7 @@ The project currently consists of two main Streamlit applications:
 ```text
 python-finances-automation/
 │
-├── index2.py
+├── index.py
 ├── docparser.py
 ├── requirements.txt
 ├── sample_bank_statement.csv
