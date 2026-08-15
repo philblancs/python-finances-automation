@@ -1,0 +1,7 @@
+.venv/
+.vscode/
+__pycache__/
+*.pyc
+categories.json
+temp_uploaded.pdf
+converted.csv
