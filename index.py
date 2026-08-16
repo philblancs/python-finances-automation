@@ -80,6 +80,8 @@ def main():
             credits_df = df[df["Debit/Credit"] == "Credit"].copy()
             
             st.session_state.debits_df = debits_df.copy()
+
+            """create two tabs for expense and credit"""
             
             tab1, tab2 = st.tabs(["Expenses (Debits)", "Payments (Credits)"])
             with tab1:
