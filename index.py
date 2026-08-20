@@ -73,7 +73,6 @@ def main():
     if uploaded_file is not None:
         df = load_transactions(uploaded_file)
 
-        """separate credits and debits """
 
         if df is not None:
             debits_df = df[df["Debit/Credit"] == "Debit"].copy()
@@ -81,7 +80,6 @@ def main():
             
             st.session_state.debits_df = debits_df.copy()
 
-            """create two tabs for expense and credit"""
             
             tab1, tab2 = st.tabs(["Expenses (Debits)", "Payments (Credits)"])
             with tab1:
